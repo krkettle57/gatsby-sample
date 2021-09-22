@@ -20,7 +20,8 @@
     },
     "ecmaVersion": 12,
     "sourceType": "module",
-    "project": "./tsconfig.eslint.json"
+    "project": "./tsconfig.eslint.json",
+    "createDefaultProgram": true
   },
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
