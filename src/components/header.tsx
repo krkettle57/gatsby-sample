@@ -6,30 +6,11 @@ type HeaderProps = {
 };
 
 const Header: React.VFC<HeaderProps> = ({ siteTitle = "" }) => (
-  <header
-    style={{
-      background: "rebeccapurple",
-      marginBottom: "1.45rem",
-    }}
-  >
-    <div
-      style={{
-        margin: "0 auto",
-        maxWidth: 960,
-        padding: "1.45rem 1.0875rem",
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: "white",
-            textDecoration: "none",
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+  <header className="bg-purple-800 mb-4">
+    <div className="lg:container mx-0 my-auto px-4 py-6 mb-4">
+      <Link className="text-white no-underline" to="/">
+        <h1 className="m-0">{siteTitle}</h1>
+      </Link>
     </div>
   </header>
 );
