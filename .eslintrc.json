@@ -44,5 +44,6 @@
         "tsx": "never"
       }
     ]
-  }
+  },
+  "ignorePatterns": ["*.js"]
 }

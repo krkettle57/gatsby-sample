@@ -1,7 +1,0 @@
-h1 {
-  @apply mx-0 mt-0 mb-6 text-4xl font-sans font-bold;
-}
-
-p {
-  @apply mx-0 mt-0 mb-6;
-}

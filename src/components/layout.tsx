@@ -8,7 +8,6 @@
 import { graphql, useStaticQuery } from "gatsby";
 import * as React from "react";
 import Header from "./header";
-import "./layout.css";
 
 type LayoutProps = { children: React.ReactNode[] };
 
@@ -26,7 +25,7 @@ const Layout: React.VFC<LayoutProps> = ({ children }) => {
   return (
     <>
       <Header siteTitle={data?.site?.siteMetadata?.title || "Title"} />
-      <div className="mx-0 my-auto lg:container px-6 py-4">
+      <div className="container mx-auto px-16 py-8 max-w-screen-lg prose bg-white">
         <main>{children}</main>
         <footer className="mt-6">
           © {new Date().getFullYear()}, Built with{" "}
