@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Default Starter",
+    title: "猫好きエンジニアの備忘録",
     description:
-      "Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.",
-    author: "@gatsbyjs",
+      "猫好きなエンジニアがフロントエンド・サーバサイド問わず学んだ技術を書き留めておくテックブログです",
+    author: "@krkettle",
     siteUrl: "https://gatsbystarterdefaultsource.gatsbyjs.io/",
   },
   plugins: [
@@ -22,11 +22,9 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: "gatsby-starter-default",
-        short_name: "starter",
+        name: "krkettle-blog",
+        short_name: "blog",
         start_url: "/",
-        background_color: "#663399",
-        theme_color: "#663399",
         display: "minimal-ui",
         icon: "src/images/gatsby-icon.png", // This path is relative to the root of the site.
       },
