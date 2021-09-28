@@ -2942,14 +2942,6 @@ declare namespace GatsbyTypes {
     readonly order: Maybe<ReadonlyArray<Maybe<SortOrderEnum>>>;
   };
 
-  type LayoutQueryVariables = Exact<{ [key: string]: never }>;
-
-  type LayoutQuery = {
-    readonly site: Maybe<{
-      readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, "title">>;
-    }>;
-  };
-
   type SeoQueryVariables = Exact<{ [key: string]: never }>;
 
   type SeoQuery = {
@@ -2957,6 +2949,14 @@ declare namespace GatsbyTypes {
       readonly siteMetadata: Maybe<
         Pick<SiteSiteMetadata, "title" | "description" | "author">
       >;
+    }>;
+  };
+
+  type LayoutQueryVariables = Exact<{ [key: string]: never }>;
+
+  type LayoutQuery = {
+    readonly site: Maybe<{
+      readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, "title">>;
     }>;
   };
 
