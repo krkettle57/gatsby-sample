@@ -37,6 +37,12 @@ module.exports = {
               background: "transparent",
               borderLeft: "solid 8px var(--color-primary)",
             },
+            p: {
+              margin: "0.25rem 0rem",
+            },
+            a: {
+              textDecoration: "none",
+            },
           },
         },
       },
