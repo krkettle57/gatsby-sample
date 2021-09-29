@@ -3,9 +3,9 @@ import React from "react";
 
 type PostLinkProps = {
   post: {
-    title?: string;
+    title: string;
     description?: string;
-    updatedAt?: string;
+    updatedAt: string;
     url: string;
   };
 };

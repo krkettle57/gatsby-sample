@@ -30,6 +30,7 @@ module.exports = {
             h1: {
               padding: "0.25rem 0rem",
               margin: "0.25rem 0rem",
+              fontWeight: "600",
             },
             h2: {
               padding: "0.25rem 0.5rem",

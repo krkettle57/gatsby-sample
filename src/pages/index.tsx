@@ -8,15 +8,16 @@ const IndexPage: React.VFC<PageProps<GatsbyTypes.postListQuery>> = ({
   data,
 }) => {
   const posts = data.allContentfulPost.edges;
+
   return (
     <Layout>
       <Seo title="Home" description="hogehoge" />
       {posts.map(edge => {
         const post = {
-          title: edge.node.title,
+          title: edge.node.title!,
           description: edge.node.description?.description,
-          updatedAt: edge.node.updatedAt,
-          url: "/", // TODO: 動的なリンクを付与
+          updatedAt: edge.node.updatedAt!,
+          url: `/post/${edge.node.slug!}`,
         };
         return <PostLink key={edge.node.slug} post={post} />;
       })}
