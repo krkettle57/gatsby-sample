@@ -11,7 +11,7 @@ const IndexPage: React.VFC<PageProps<GatsbyTypes.postListQuery>> = ({
 
   return (
     <Layout>
-      <Seo title="Home" description="hogehoge" />
+      <Seo title="Home" />
       {posts.map(edge => {
         const post = {
           title: edge.node.title!,
