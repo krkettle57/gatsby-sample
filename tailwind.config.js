@@ -1,3 +1,5 @@
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}"],
   darkMode: false, // or 'media' or 'class'
@@ -5,16 +7,16 @@ module.exports = {
     extend: {
       colors: {
         base1: {
-          DEFAULT: "var(--color-base1)",
+          DEFAULT: colors.blueGray[800],
         },
         base2: {
-          DEFAULT: "var(--color-base2)",
+          DEFAULT: colors.coolGray[100],
         },
         primary: {
-          DEFAULT: "var(--color-primary)",
+          DEFAULT: colors.teal[400],
         },
         accent: {
-          DEFAULT: "var(--color-accent)",
+          DEFAULT: colors.rose[400],
         },
       },
       fontFamily: {

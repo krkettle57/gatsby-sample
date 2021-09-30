@@ -2,13 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --color-base1: #252a34;
-  --color-base2: #f3f3f3;
-  --color-primary: #08d9d6;
-  --color-accent: #ff2e63;
-}
-
 body {
   @apply font-sans text-base1 bg-base2 tracking-wide;
 }
