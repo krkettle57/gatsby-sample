@@ -17,8 +17,8 @@ const NavLink: React.VFC<NavLinkProps> = ({ children, href }) => (
 const Navbar: React.VFC = () => (
   <div className="container flex items-center justify-center p-6 mx-auto capitalize">
     <NavLink href="/">Home</NavLink>
-    <NavLink href="/">Profile</NavLink>
-    <NavLink href="/">Works</NavLink>
+    <NavLink href="/about">About</NavLink>
+    <NavLink href="/works">Works</NavLink>
   </div>
 );
 
