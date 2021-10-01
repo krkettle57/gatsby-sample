@@ -5990,6 +5990,16 @@ declare namespace GatsbyTypes {
     }>;
   };
 
+  type SeoQueryVariables = Exact<{ [key: string]: never }>;
+
+  type SeoQuery = {
+    readonly site: Maybe<{
+      readonly siteMetadata: Maybe<
+        Pick<SiteSiteMetadata, "title" | "description" | "author">
+      >;
+    }>;
+  };
+
   type GatsbyImageSharpFixedFragment = Pick<
     ImageSharpFixed,
     "base64" | "width" | "height" | "src" | "srcSet"
@@ -6072,16 +6082,6 @@ declare namespace GatsbyTypes {
     ImageSharpFluid,
     "aspectRatio" | "src" | "srcSet" | "srcWebp" | "srcSetWebp" | "sizes"
   >;
-
-  type SeoQueryVariables = Exact<{ [key: string]: never }>;
-
-  type SeoQuery = {
-    readonly site: Maybe<{
-      readonly siteMetadata: Maybe<
-        Pick<SiteSiteMetadata, "title" | "description" | "author">
-      >;
-    }>;
-  };
 
   type GatsbyContentfulFixedFragment = Pick<
     ContentfulFixed,
