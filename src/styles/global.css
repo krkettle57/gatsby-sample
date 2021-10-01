@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    @apply font-serif text-lg;
-  }
+body {
+  @apply font-sans text-base1 bg-base2 tracking-wide;
 }
