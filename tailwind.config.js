@@ -1,5 +1,6 @@
 const colors = require("tailwindcss/colors");
 
+console.log(colors.black["100"]);
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}"],
   darkMode: false, // or 'media' or 'class'
@@ -36,9 +37,9 @@ module.exports = {
             },
             h2: {
               padding: "0.25rem 0.5rem",
-              color: "var(--color-base1)",
+              color: colors.blueGray["800"],
               background: "transparent",
-              borderLeft: "solid 8px var(--color-primary)",
+              borderLeft: `solid 8px ${colors.teal[400]}`,
             },
             p: {
               margin: "0.25rem 0rem",
